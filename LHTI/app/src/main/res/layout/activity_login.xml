@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/moj2"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logowanie"
+        android:textColor="#FFE994"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/moj"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:hint="Login"
+        android:paddingStart="20dp"
+        android:paddingEnd="0px" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/moj"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Hasło"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="0px" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/item"
+        android:paddingStart="20dp"
+        android:paddingEnd="0px"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Zaloguj" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nie masz konta?"
+            android:textColor="@color/item"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/registerNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zajerestuj się "
+            android:textColor="@color/item"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
